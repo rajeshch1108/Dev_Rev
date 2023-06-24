@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="flyhigh.png">
+    <title>User-HomePage</title>  
+    <script src="https://kit.fontawesome.com/265aaa2447.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="userhome.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        <img src="flyhigh.png">
+    </header>
+    <div class="slide">
+        <ul id="sidemenu" class="sidemenu">
+            <h1>Menu</h1>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="flightbooking.html">Flight Booking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="" id="logout">LogOut</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+    </div>
+
+    <div class="user-container">
+        <h1 id="welcome-note"></h1>
+    </div>
+
+    
+    <div class="special">
+        <div class="special-container">
+            <p><i><strong>“ </strong>At FlyHigh we provide enhancing features which benefits our customers to experience hustle free journey & helps to make life-time memories <strong>”</strong>.</i></p>
+        </div>
+        <div class="feature">
+            <h1>To access our features please head out to our Menu Bar</h1>
+        </div>
+    </div>
+
+
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openMenu(){
+            sidemenu.style.left = "0";
+        }
+
+        function closeMenu(){
+            sidemenu.style.left = "-280px";
+        }
+
+
+        document.getElementById("welcome-note").innerHTML = "Welcome, "+localStorage.getItem("email");
+    </script>
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+  
+    import { update, getDatabase, ref, child, onValue, get, set } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyDdbV0ca3tQKg-eE4MlL2dcPMhpzIdtcf8",
+        authDomain: "devrev-7d849.firebaseapp.com",
+        databaseURL: "https://devrev-7d849-default-rtdb.firebaseio.com/",
+        projectId: "devrev-7d849",
+        storageBucket: "devrev-7d849.appspot.com",
+        messagingSenderId: "503286320703",
+        appId: "1:503286320703:web:5947cd2198e0b7ff49328a"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  
+    const db = getDatabase();
+    const auth = getAuth(app);
+    document.getElementById('logout').addEventListener('click', function(){
+        signOut(auth).then(() => {
+            alert("Logged out successfully");
+            window.location.replace("index.html")
+        }).catch((error) => {
+        // An error happened.
+        alert(error);
+        });
+    })
+
+  </script>
+</html>

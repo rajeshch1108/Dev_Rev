@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-image: url("https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?s=170667a&w=0&k=20&c=dM5w_73VjhgAhE0tSeJLC_2Cpp1zu-3zsCS38_3DdrU=");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #list-container {
+    margin: 100px auto;
+    max-width: 880px;
+    width: 90%;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .table {
+    padding: 12px;
+  }
+  
+  .thead {
+    background-color: #555;
+  }
+  
+  #tbody1 {
+    background-color: blue;
+  }
+  
+  .thead th {
+    padding: 20px;
+    font-size: 18px;
+    color: wheat;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  #tbody1 td {
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+        background-image: url("https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?s=170667a&w=0&k=20&c=dM5w_73VjhgAhE0tSeJLC_2Cpp1zu-3zsCS38_3DdrU=");
+        background-repeat: no-repeat;
+        background-size: 1000px 1200px;
+      }
+    #list-container {
+      margin: 50px auto;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+        background-image: url("https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?s=170667a&w=0&k=20&c=dM5w_73VjhgAhE0tSeJLC_2Cpp1zu-3zsCS38_3DdrU=");
+        background-repeat: no-repeat;
+        background-size: 1000px 2200px;
+      }
+    #list-container {
+      margin: 20px auto;
+      padding: 10px;
+    }
+  }
+  
