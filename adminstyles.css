@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?s=170667a&w=0&k=20&c=dM5w_73VjhgAhE0tSeJLC_2Cpp1zu-3zsCS38_3DdrU=");
+  background-image: url("https://images.pexels.com/photos/313768/pexels-photo-313768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,8 +21,9 @@ header h1 {
   padding: 20px;
   text-align: center;
   max-width: 90vw;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .option {
@@ -49,10 +50,11 @@ header h1 {
 
 @media (max-width: 600px) {
   body {
-    background-image: url("https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?s=170667a&w=0&k=20&c=dM5w_73VjhgAhE0tSeJLC_2Cpp1zu-3zsCS38_3DdrU=");
+    background-image: url("https://images.pexels.com/photos/313768/pexels-photo-313768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: 1500px 1900px;
   }
+  
   .options-container {
     margin-top: 10vh;
     margin-left: 2vw;
