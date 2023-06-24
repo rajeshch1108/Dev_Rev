@@ -1,0 +1,49 @@
+#list-container {
+    margin: 50px auto;
+    background-color: transparent;
+    width: 90%;
+    max-width: 680px;
+    padding: 12px;
+    text-align: center;
+}
+
+.table {
+    padding: 12px;
+}
+
+.thead {
+    background-color: #555;
+}
+
+#tbody1 {
+    background-color: blue;
+}
+
+.thead th {
+    padding: 10px;
+    font-size: 16px;
+    color: wheat;
+    font-weight: bold;
+    text-align: center;
+}
+
+#tbody1 td {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #list-container {
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    .thead th {
+        font-size: 14px;
+    }
+
+    #tbody1 td {
+        padding: 8px;
+    }
+}
