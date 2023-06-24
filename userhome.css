@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("https://media.istockphoto.com/id/1332501286/photo/aerial-flying-airplane-and-sky-landscape-close-up.jpg?s=170667a&w=0&k=20&c=dM5w_73VjhgAhE0tSeJLC_2Cpp1zu-3zsCS38_3DdrU=");
+    background-image: url("https://images.pexels.com/photos/313768/pexels-photo-313768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -107,7 +107,7 @@ ul li:hover a{
       left: 0;
     }
     body{
-        background-image: url("https://images.pexels.com/photos/62623/wing-plane-flying-airplane-62623.jpeg?cs=srgb&dl=pexels-pixabay-62623.jpg&fm=jpg");
+        background-image: url("https://images.pexels.com/photos/313768/pexels-photo-313768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-repeat: no-repeat;
         background-size: 500px 1000px;
     }
