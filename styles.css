@@ -6,14 +6,14 @@ body {
 
 header {
     display: flex;
-    background-color: #333;
+    background-color: #92cc97;
     color: #fff;
     padding: 20px;
 }
 
 
 header img{
-    width: 80px;
+    width: 140px;
 }
 
 .container {
@@ -38,11 +38,14 @@ header img{
     padding: 10px;
     background-color: #333;
     color: #fff;
+    text-align: center;
     text-decoration: none;
+    border-radius: 12px;
 }
 
 .options ul li a:hover {
-    background-color: #555;
+    background-color: whitesmoke;
+    color: black;
 }
 
 .user-login-form, .user-registration-form{
@@ -67,6 +70,8 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
     margin-bottom: 10px;
+    background-color: #92cc97;
+    color: black;
     padding: 10px;
 }
 
@@ -79,7 +84,8 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: whitesmoke;
+    color: black;
 }
 
 
