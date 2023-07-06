@@ -8,7 +8,7 @@
 
 #availabilty-container {
     margin: 0 auto;
-    background-color: transparent;
+    background-color: black;
     width: 90%;
     max-width: 380px;
     padding: 12px;
@@ -19,6 +19,7 @@
 }
 
 #availabilty-container label {
+    color: wheat;
     font-size: 16px;
     font-weight: bold;
 }
@@ -26,6 +27,8 @@
 #seats {
     font-size: 16px;
     padding: 6px;
+    background-color: black;
+    color: #ff8c00;
 }
 
 #bookTickets {
@@ -37,8 +40,8 @@
 #list-container h2 {
     padding: 12px;
     margin-top: 18px;
-    background-color: rgb(6, 6, 118);
-    color: white;
+    background-color: #92cc97;
+    color: black;
     border-radius: 6px;
     font-size: 20px;
 }
@@ -57,8 +60,9 @@
 }
 
 .row ul li:hover {
-    background-color: rgb(7, 7, 142);
-    color: white;
+    background-color: #92cc97;
+    color: black;
+    font-weight: bolder;
     border: 2px solid black;
     padding-left: 20px;
     box-shadow: 12px 12px #555;
