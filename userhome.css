@@ -50,7 +50,7 @@ ul li a{
 
 ul li:hover a{
     padding-left: 20px;
-    background-color: skyblue;
+    background-color: #92cc97;
     border-radius: 12px;
     color: white;
 }
